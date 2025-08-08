@@ -1,367 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Fabelo - Modern Web Developer</title>
-    <meta name="description" content="Mario Fabelo's personal website">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario Fabelo</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar glass-effect">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">MF</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#youtube" class="nav-link">YouTube</a></li>
-                <li><a href="#cv" class="nav-link">CV</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <a href="#trinity" class="nav-link">Trinity</a>
+    <a href="#patch" class="nav-link">Patch 2025</a>
+    <a href="#youtube" class="nav-link">YouTube</a>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-name">
-                    <span class="typewriter-text" id="typewriter"></span>
-                </h1>
-                <p class="hero-subtitle">Physics & Astrophysics Student + College YouTuber</p>
-                <p class="hero-description">4th Year Student at Trinity College Dublin</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary glass-btn">View Portfolio</button>
-                    <button class="btn btn-secondary glass-btn">Watch YouTube</button>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="trinity" class="color-section trinity">
+    <div class="section-content">
+      <h1>Mario Fabelo</h1>
+      <p>Incoming 4th year Physics & Astrophysics student at Trinity College Dublin.</p>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">A 21 year old that loves Math, Physics, coding and making videos</p>
-            </div>
-            <div class="about-content">
-                <div class="about-card glass-effect floating-card">
-                    <div class="card-content">
-                        <h3>Physics & Astrophysics</h3>
-                        <p>I wanted to understand hardcore Maths, Physics and the universe, as well as how to code it ; )</p>
-                    </div>
-                </div>
-                <div class="about-card glass-effect floating-card">
-                    <div class="card-content">
-                        <h3>Content Creation</h3>
-                        <p>College YouTuber sharing educational content, study tips, and insights into student life at Trinity College Dublin.</p>
-                    </div>
-                </div>
-                <div class="about-card glass-effect floating-card">
-                    <div class="card-content">
-                        <h3>Machine Learning</h3>
-                        <p>Applying computational methods and AI to solve physics problems and analyze astrophysical data.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="patch" class="color-section patch">
+    <div class="section-content">
+      <h1>Patch 2025 Cohort</h1>
+      <p>Exploring the intersection of physics and technology as part of the Patch 2025 cohort.</p>
+    </div>
+  </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Portfolio</h2>
-                <p class="section-subtitle">Machine Learning & Physics Projects</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item glass-effect floating-card">
-                    <div class="portfolio-image">
-                        <div class="placeholder-image">🤖 ML</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Stellar Classification Model</h3>
-                        <p>Machine learning model to classify stellar objects using spectroscopic data and photometric measurements.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item glass-effect floating-card">
-                    <div class="portfolio-image">
-                        <div class="placeholder-image">🔬 AI</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Quantum State Prediction</h3>
-                        <p>Neural network implementation for predicting quantum mechanical states in particle physics simulations.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item glass-effect floating-card">
-                    <div class="portfolio-image">
-                        <div class="placeholder-image">🌌 DATA</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Cosmic Ray Analysis</h3>
-                        <p>Deep learning approach to analyze cosmic ray data and identify high-energy particle interactions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="youtube" class="color-section youtube">
+    <div class="section-content">
+      <h1>YouTube Channel</h1>
+      <p>Sharing college life, physics insights, and study tips on my channel.</p>
+      <a class="btn" href="https://youtube.com/mariofabelo" target="_blank">Visit Channel</a>
+    </div>
+  </section>
 
-    <!-- YouTube Section -->
-    <section id="youtube" class="youtube">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">YouTube Channel</h2>
-            </div>
-            <div class="youtube-content">
-                <!-- Channel Header -->
-                <div class="channel-header glass-effect floating-card">
-                    <div class="channel-info">
-                        <div class="channel-avatar">
-                            <span class="avatar-placeholder">MF</span>
-                        </div>
-                        <div class="channel-details">
-                            <h3 class="channel-name">Mario Fabelo</h3>
-                            <p class="channel-stats">@mariofabelo • 4.41K subscribers • 100 videos</p>
-                            <p class="channel-description">Physics & Astrophysics Student at Trinity College Dublin 🎓 | Study Tips & College Life 📚</p>
-                        </div>
-                    </div>
-                    <div class="channel-actions">
-                        <a href="https://youtube.com/mariofabelo" target="_blank" class="btn btn-primary glass-btn">
-                            <i class="fab fa-youtube"></i> Subscribe
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Recommended Videos Grid -->
-                <div class="videos-section">
-                    <div class="section-header">
-                        <h3 class="videos-title">Recommended Videos</h3>
-                    </div>
-                    
-                    <div class="videos-grid">
-                        <div class="video-card glass-effect floating-card" data-video-url="https://youtu.be/Lislx1rA6X0">
-                            <div class="video-thumbnail">
-                                <div class="thumbnail-placeholder">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <span class="video-duration">11:18</span>
-                            </div>
-                            <div class="video-info">
-                                <h4 class="video-title">Entering the Hidden Telescope at Trinity College Dublin</h4>
-                                <div class="video-metadata">
-                                    <span class="video-views">614 views</span>
-                                    <span class="video-date">1 month ago</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="video-card glass-effect floating-card" data-video-url="https://youtu.be/Auvzhsaj9so">
-                            <div class="video-thumbnail">
-                                <div class="thumbnail-placeholder">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <span class="video-duration">16:20</span>
-                            </div>
-                            <div class="video-info">
-                                <h4 class="video-title">a week studying physics & astrophysics at Trinity College Dublin</h4>
-                                <div class="video-metadata">
-                                    <span class="video-views">1.1K views</span>
-                                    <span class="video-date">3 months ago</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="video-card glass-effect floating-card" data-video-url="https://youtu.be/bhi07BEJm1o">
-                            <div class="video-thumbnail">
-                                <div class="thumbnail-placeholder">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <span class="video-duration">--:--</span>
-                            </div>
-                            <div class="video-info">
-                                <h4 class="video-title">Video Title 3</h4>
-                                <div class="video-metadata">
-                                    <span class="video-views">-- views</span>
-                                    <span class="video-date">-- ago</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="video-card glass-effect floating-card" data-video-url="https://youtu.be/aqkyTAfwgh8">
-                            <div class="video-thumbnail">
-                                <div class="thumbnail-placeholder">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <span class="video-duration">--:--</span>
-                            </div>
-                            <div class="video-info">
-                                <h4 class="video-title">Video Title 4</h4>
-                                <div class="video-metadata">
-                                    <span class="video-views">-- views</span>
-                                    <span class="video-date">-- ago</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="video-card glass-effect floating-card" data-video-url="https://youtu.be/_Z6xZSUp5fI">
-                            <div class="video-thumbnail">
-                                <div class="thumbnail-placeholder">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <span class="video-duration">--:--</span>
-                            </div>
-                            <div class="video-info">
-                                <h4 class="video-title">Video Title 5</h4>
-                                <div class="video-metadata">
-                                    <span class="video-views">-- views</span>
-                                    <span class="video-date">-- ago</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="video-card glass-effect floating-card" data-video-url="https://youtu.be/pft-1OA3aFM">
-                            <div class="video-thumbnail">
-                                <div class="thumbnail-placeholder">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <span class="video-duration">--:--</span>
-                            </div>
-                            <div class="video-info">
-                                <h4 class="video-title">Video Title 6</h4>
-                                <div class="video-metadata">
-                                    <span class="video-views">-- views</span>
-                                    <span class="video-date">-- ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CV Section -->
-    <section id="cv" class="cv">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Curriculum Vitae</h2>
-                <p class="section-subtitle">Academic and professional background</p>
-            </div>
-            <div class="cv-content">
-                <div class="cv-card glass-effect floating-card">
-                    <div class="cv-section">
-                        <h3>🎓 Education</h3>
-                        <div class="cv-item">
-                            <h4>Trinity College Dublin</h4>
-                            <p>4th Year Physics & Astrophysics Student</p>
-                            <span class="cv-date">2021 - 2025</span>
-                        </div>
-                    </div>
-                    <div class="cv-section">
-                        <h3>🔬 Research Interests</h3>
-                        <ul class="cv-list">
-                            <li>Machine Learning in Physics</li>
-                            <li>Astrophysical Data Analysis</li>
-                            <li>Quantum Computing</li>
-                            <li>Computational Physics</li>
-                        </ul>
-                    </div>
-                    <div class="cv-section">
-                        <h3>📺 Content Creation</h3>
-                        <div class="cv-item">
-                            <h4>YouTube Channel</h4>
-                            <p>Educational content focused on physics, study methods, and college life</p>
-                            <span class="cv-date">2022 - Present</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cv-actions">
-                    <button class="btn btn-primary glass-btn">Download CV</button>
-                    <button class="btn btn-secondary glass-btn">View Academic Transcript</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's collaborate on physics projects or content creation</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item glass-effect floating-card">
-                        <div class="contact-icon">📧</div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p>mario.fabelo@tcd.ie</p>
-                        </div>
-                    </div>
-                    <div class="contact-item glass-effect floating-card">
-                        <div class="contact-icon">📺</div>
-                        <div class="contact-text">
-                            <h3>YouTube</h3>
-                            <p>youtube.com/mariofabelo</p>
-                        </div>
-                    </div>
-                    <div class="contact-item glass-effect floating-card">
-                        <div class="contact-icon">🏫</div>
-                        <div class="contact-text">
-                            <h3>University</h3>
-                            <p>Trinity College Dublin</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form glass-effect">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary glass-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Media Footer -->
-    <footer class="social-footer">
-        <div class="container">
-            <div class="social-content">
-                <h2 class="social-title">Let's Connect!</h2>
-                <p class="social-subtitle">Follow my journey through physics, content creation, and more</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/mariofabelo" target="_blank" class="social-link linkedin" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://youtube.com/mariofabelo" target="_blank" class="social-link youtube" title="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://instagram.com/mariofabelo" target="_blank" class="social-link instagram" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/mariofabelo" target="_blank" class="social-link github" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
