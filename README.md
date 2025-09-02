@@ -1,153 +1,87 @@
 # Mario Fabelo - Personal Website
 
-A stunning modern personal website featuring cutting-edge UI effects, liquid glass design, and interactive animations.
+A modern, responsive personal website showcasing Mario Fabelo's academic background, projects, and content creation work.
 
-## ✨ Features
+## 🚀 Features
 
-### 🎨 Visual Effects
-- **Liquid Glass Effect** - Apple-inspired glassmorphism with backdrop blur
-- **Custom Cursor** - Smooth following cursor with interactive scaling
-- **Floating Animations** - Elements that respond to mouse movement
-- **Parallax Scrolling** - Smooth parallax effects on hero section
-- **3D Card Hover** - Interactive 3D transformations on cards
+- **Modern Design**: Glass morphism effects and smooth animations
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Interactive Elements**: Typewriter effects, floating cards, and smooth scrolling
+- **YouTube Integration**: Live stats display with manual update system
+- **Contact Form**: Built-in contact functionality
+- **Portfolio Showcase**: Project highlights with GitHub links
 
-### 🎯 Interactive Elements
-- **Magnetic Buttons** - Buttons that attract to cursor position
-- **Ripple Effects** - Material Design-inspired click animations
-- **Scroll Animations** - Elements animate into view on scroll
-- **Responsive Navigation** - Auto-hiding navigation on scroll
-- **Touch Support** - Optimized interactions for mobile devices
+## 🛠️ Tech Stack
 
-### 📱 Responsive Design
-- Fully responsive across all devices
-- Mobile-optimized touch interactions
-- Adaptive layouts for different screen sizes
-- Performance-optimized animations
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Styling**: Custom CSS with glass morphism effects
+- **Icons**: Font Awesome 6.0
+- **Fonts**: Custom Hoftype Askan Medium font
+- **YouTube Stats**: Node.js integration with manual update system
 
-## 🚀 Quick Start
-
-1. **Clone or download** the files to your computer
-2. **Open a terminal** in the project directory
-3. **Start a local server**:
-   ```bash
-   python3 -m http.server 8000
-   ```
-4. **Open your browser** and go to `http://localhost:8000`
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
-mario-fabelo-website/
-├── index.html          # Main HTML structure
-├── styles.css          # CSS with liquid glass effects
-├── script.js           # JavaScript for interactions
-└── README.md          # This documentation
+├── index.html          # Main website file
+├── styles.css          # Custom styling and animations
+├── script.js           # Interactive functionality
+├── update-stats-manual.js  # YouTube stats updater
+├── youtube-stats.json      # Current YouTube channel stats
+├── fonts/              # Custom typography
+└── package.json        # Project configuration
 ```
 
 ## 🎯 Sections
 
-### 🏠 Hero Section
-- Large animated name display
-- Floating background shapes
-- Call-to-action buttons
-- Parallax scrolling effect
+- **Home**: Hero section with typewriter effect
+- **About**: Academic background and interests
+- **Projects**: Portfolio of research and development work
+- **YouTube**: Channel showcase with live stats
+- **CV**: Comprehensive academic and professional background
+- **Contact**: Multiple contact methods and form
 
-### 👨‍💻 About Section
-- Interactive cards with 3D hover effects
-- Glassmorphism design
-- Scroll-triggered animations
+## 🚀 Quick Start
 
-### 💼 Portfolio Section
-- Grid layout with project cards
-- Hover effects and animations
-- Placeholder for project images
+1. **Clone the repository**
+2. **Install dependencies**: `npm install`
+3. **Start local server**: `npm start`
+4. **Open**: Navigate to `http://localhost:8000`
 
-### 📞 Contact Section
-- Contact information cards
-- Interactive contact form
-- Form submission animations
+## 📊 YouTube Stats Integration
 
-## 🔧 Customization
+Update your YouTube channel statistics easily:
 
-### Colors
-The website uses a gradient color scheme. To change colors, modify the CSS variables in `styles.css`:
-```css
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+```bash
+npm run update-stats
 ```
 
-### Content
-Update the content in `index.html`:
-- Change name in the hero section
-- Update contact information
-- Add your portfolio projects
-- Modify the about section
+The system automatically updates subscriber count and video count on your website.
 
-### Images
-Add your project images by replacing the placeholder divs in the portfolio section.
+## 🎨 Customization
 
-## 🌐 Browser Support
+- Modify colors and effects in `styles.css`
+- Update content in `index.html`
+- Adjust animations in `script.js`
+- Customize YouTube stats display
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Mobile browsers
+## 📱 Responsive Design
 
-## 🎨 Design Features
+- Mobile-first approach
+- Glass morphism effects
+- Smooth animations and transitions
+- Optimized for all screen sizes
 
-- **Glassmorphism** - Frosted glass effect with backdrop blur
-- **Gradient Backgrounds** - Beautiful color transitions
-- **Smooth Animations** - 60fps performance optimized
-- **Modern Typography** - Clean, readable font stack
-- **Hover Effects** - Interactive feedback on all elements
+## 🔗 Links
 
-## 📱 Mobile Optimization
+- **Website**: [mariofabelo.com](https://mariofabelo.com)
+- **YouTube**: [@mariofabelo](https://youtube.com/mariofabelo)
+- **LinkedIn**: [mariofabelo](https://linkedin.com/in/mariofabelo)
+- **GitHub**: [mariofabelo](https://github.com/mariofabelo)
 
-- Touch-friendly interactions
-- Responsive grid layouts
-- Optimized animations for mobile
-- Adaptive cursor behavior
-- Mobile-first design approach
+## 📄 License
 
-## 🚀 Performance
+MIT License - feel free to use this code for your own projects!
 
-- Optimized animations using `requestAnimationFrame`
-- CSS transforms for smooth performance
-- Lazy loading for scroll animations
-- Efficient event handling
-- Mobile detection for performance
+---
 
-## 🎯 Key Interactions
-
-1. **Mouse Movement** - Shapes and cards follow cursor
-2. **Hover Effects** - 3D transformations on cards
-3. **Click Animations** - Ripple effects on buttons
-4. **Scroll Behavior** - Smooth scrolling navigation
-5. **Form Interaction** - Animated form submission
-
-## 🎨 Color Palette
-
-- Primary: Linear gradient from #667eea to #764ba2
-- Glass: White with transparency (10-15%)
-- Text: White with varying opacity
-- Borders: White with 20% opacity
-
-## 📞 Contact Information
-
-Update the contact section in `index.html` with your actual information:
-- Email address
-- Phone number
-- Location
-- Social media links
-
-## 🎉 Enjoy Your Website!
-
-Your personal website is now ready with all the modern effects you requested:
-- ✅ Liquid glass effect from Apple
-- ✅ Interactive floating elements
-- ✅ Cursor-following animations
-- ✅ Modern responsive design
-- ✅ Smooth scroll animations
-- ✅ Professional layout
-
-Open `http://localhost:8000` in your browser to see your amazing website in action! 
+Built with ❤️ by Mario Fabelo
