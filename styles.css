@@ -1374,12 +1374,12 @@ body.theme-about {
     line-height: 1.7;
     margin-bottom: 1rem;
     opacity: 0.9;
-    font-size: 6px !important;
+    font-size: 1rem;
 }
 
 /* More specific selector to ensure it takes precedence */
 .cv-section .cv-summary {
-    font-size: 6px !important;
+    font-size: 1rem;
 }
 
 .cv-link {
