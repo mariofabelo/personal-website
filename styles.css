@@ -25,6 +25,14 @@ html {
     scroll-padding-top: 100px; /* Account for fixed navbar */
 }
 
+/* Safe area support for modern devices */
+@supports (padding: max(0px)) {
+    body {
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+}
+
 /* Ensure smooth scrolling works on all browsers */
 @media (prefers-reduced-motion: no-preference) {
     html {
@@ -63,7 +71,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 max(2rem, env(safe-area-inset-left, 2rem)) 0 max(2rem, env(safe-area-inset-right, 2rem));
 }
 
 /* Navigation */
@@ -345,6 +353,9 @@ section {
     z-index: 100;
     padding: 2rem;
     border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-title {
@@ -365,6 +376,8 @@ section {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: aboutTitleGradient 8s linear infinite;
+    text-align: center;
+    margin: 0 auto;
 }
 
 @keyframes aboutTitleGradient {
@@ -376,12 +389,18 @@ section {
     font-size: 1.2rem;
     opacity: 0.7;
     color: #34495e;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* About Section */
 .about {
     position: relative;
     overflow: visible;
+    padding: 6rem 0;
+    margin: 2rem 0;
     /* Removed background gradient to fix title visibility */
 }
 
@@ -389,14 +408,20 @@ section {
 
 .about-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .about-card {
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
 }
 
 .about-card:hover {
@@ -407,12 +432,22 @@ section {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #2c3e50;
+    text-align: center;
 }
 
 .about-card p {
     opacity: 0.8;
     line-height: 1.8;
     color: #34495e;
+    text-align: center;
+    margin: 0;
+}
+
+.about-card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 /* Portfolio Section */
@@ -1754,7 +1789,7 @@ body.theme-about {
 
 /* Enhanced section header for contact */
 .contact .section-header {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .contact .section-title {
@@ -1924,6 +1959,17 @@ body.theme-about {
     
     .about-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 100%;
+    }
+    
+    .about {
+        padding: 3rem 0;
+    }
+    
+    .section-header {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
     }
     
     .portfolio-grid {
@@ -1983,7 +2029,7 @@ body.theme-about {
     }
     
     .container {
-        padding: 0 1rem;
+        padding: 0 max(1rem, env(safe-area-inset-left, 1rem)) 0 max(1rem, env(safe-area-inset-right, 1rem));
     }
     
     .navbar {
