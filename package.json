@@ -1,0 +1,15 @@
+{
+  "name": "mario-fabelo-website",
+  "version": "1.0.0",
+  "description": "Personal website with YouTube stats integration",
+  "main": "index.html",
+  "scripts": {
+    "update-stats": "node update-stats-manual.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": ["website", "youtube", "stats"],
+  "author": "Mario Fabelo",
+  "license": "MIT"
+}
