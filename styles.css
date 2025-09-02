@@ -264,11 +264,19 @@ body {
 /* Removed blobFloat animations */
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     opacity: 0.8;
     animation: slideUp 1s ease-out 0.4s both;
     color: #2c3e50;
+    /* Safe zone spacing for consistent centering at any width */
+    padding: 0 max(2rem, env(safe-area-inset-left, 2rem)) 0 max(2rem, env(safe-area-inset-right, 2rem));
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .hero-description {
@@ -1366,6 +1374,12 @@ body.theme-about {
     line-height: 1.7;
     margin-bottom: 1rem;
     opacity: 0.9;
+    font-size: 6px !important;
+}
+
+/* More specific selector to ensure it takes precedence */
+.cv-section .cv-summary {
+    font-size: 6px !important;
 }
 
 .cv-link {
@@ -1383,7 +1397,7 @@ body.theme-about {
 
 .cv-link::after {
     content: ' ↗';
-    font-size: 0.8em;
+    font-size: 0.6em;
     opacity: 0.7;
 }
 
@@ -1957,6 +1971,22 @@ body.theme-about {
 }
 
 @media (max-width: 600px) {
+    .hero-buttons {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.6rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-buttons .btn {
+        width: auto;
+        min-width: 90px;
+        max-width: 140px;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
     /* Contact section medium-small screen responsiveness */
     .contact-info {
         gap: 1.8rem;
@@ -1997,8 +2027,19 @@ body.theme-about {
     }
     
     .hero-buttons {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-buttons .btn {
+        width: auto;
+        min-width: 110px;
+        max-width: 160px;
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
     }
     
     .about-content {
@@ -2121,6 +2162,21 @@ body.theme-about {
     
     .btn {
         padding: 0.8rem 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-buttons .btn {
+        width: auto;
+        min-width: 80px;
+        max-width: 120px;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.75rem;
     }
     
     /* Contact section extra small screen responsiveness */
