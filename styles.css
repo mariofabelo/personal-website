@@ -264,7 +264,7 @@ body {
 /* Removed blobFloat animations */
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     margin-bottom: 1rem;
     opacity: 0.8;
     animation: slideUp 1s ease-out 0.4s both;
