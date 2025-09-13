@@ -490,32 +490,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('YouTube stats updated:', stats);
             }
             
-            // Show last updated time if available
-            if (stats.lastUpdated) {
-                const lastUpdated = new Date(stats.lastUpdated);
-                const timeAgo = getTimeAgo(lastUpdated);
-                
-                // Add a small indicator showing when stats were last updated
-                const updateIndicator = document.createElement('span');
-                updateIndicator.className = 'stats-update-indicator';
-                updateIndicator.textContent = ` • Updated ${timeAgo}`;
-                updateIndicator.style.cssText = `
-                    font-size: 0.8em;
-                    opacity: 0.7;
-                    font-style: italic;
-                `;
-                
-                // Remove existing indicator if present
-                const existingIndicator = document.querySelector('.stats-update-indicator');
-                if (existingIndicator) {
-                    existingIndicator.remove();
-                }
-                
-                // Add new indicator after the channel stats
-                if (channelStatsElement) {
-                    channelStatsElement.appendChild(updateIndicator);
-                }
-            }
+            // Last updated time indicator removed as requested
             
         } catch (error) {
             console.error('Error updating YouTube stats:', error);
