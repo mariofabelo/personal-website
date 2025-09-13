@@ -954,6 +954,14 @@ section {
         0 4px 8px rgba(0, 0, 0, 0.15),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
     position: relative;
+    overflow: hidden;
+}
+
+.avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .channel-avatar::before {
@@ -2226,6 +2234,13 @@ body.theme-about {
         width: 60px;
         height: 60px;
         font-size: 1.2rem;
+    }
+    
+    .avatar-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
     }
     
     .channel-name {
